@@ -1,11 +1,10 @@
 import "../../styles/home.css";
 import React from "react";
-/* import Home from "./views/home"; */
-import People from "./views/people";
+/* import People from "./views/people";
 import Planets from "./views/planets";
-import Starships from "./views/starships";
+import Starships from "./views/starships"; */
 
-export default function home() {
+export default function Home() {
   return (
     <>
       <h2 className="p-3 text-light text-center display-4">people</h2>

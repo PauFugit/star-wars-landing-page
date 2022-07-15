@@ -1,10 +1,10 @@
 import React from "react";
 /* import React, { useEffect } from "react";
 import { useContext } from "react";*/
-import { Link, useParams } from "react-router-dom";
+/* import { Link, useParams } from "react-router-dom"; */
 /*import { Context } from "../store/appContext";*/
 
-export default function planets() {
+const Planets = () => {
   return (
     <div className="card" style={{ width: "18rem" }}>
       <img src="..." className="card-img-top" alt="..." />
@@ -21,3 +21,5 @@ export default function planets() {
     </div>
   );
 }
+
+export default Planets;

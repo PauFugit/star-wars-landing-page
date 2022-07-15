@@ -8,7 +8,7 @@ import { Footer } from "./component/footer";
 import { Planets } from "./views/planets";
 import { NotFound } from "./views/NotFound";
 import { People } from "./views/people";
-import {Starships } from "./views/starships"
+import { Starships } from "./views/starships"
 
 //create your first component
 const Layout = () => {
