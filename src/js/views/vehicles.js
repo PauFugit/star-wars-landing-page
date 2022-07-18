@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function planets() {
+export default function Vehicles() {
   return (
-    <div>Planets</div>
+    <div>Vehicles</div>
   )
 }
-

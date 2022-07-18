@@ -2,7 +2,7 @@ import React from 'react'
 
 const People=() => {
   return (
-    <div>people</div>
+    <div>People</div>
   )
 }
 export default People;
