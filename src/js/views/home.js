@@ -4,7 +4,7 @@ import "../../styles/home.css";
 import { Link } from "react-router-dom";
 
 export const Home = () => (
-	<>
+	<>{/* not jumbrotron */}
     <div class="container-fluid bg-dark text-light p-5">
     <div class="container bg-dark p-5">
         <h1 class="display-4">Welcome to my Website</h1>
@@ -13,6 +13,7 @@ export const Home = () => (
         <Link to="#" class="btn btn-info">May the force be with you</Link>
     </div>
 	</div>
+	{/* body */}
 	<div className="Title">
 		<h1>Characters</h1>
 	</div>

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export default function Vehicles() {
   return (
     <>
-      <div>Vehicles</div>
+      <div className="title">
+        <h1>Vehicles</h1>
+      </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col">
           <div className="card">

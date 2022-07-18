@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const People=() => {
   return (
     <>
-      <div>People</div>
+      <div className="title">
+        <h1>People</h1>
+      </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col">
           <div className="card">
