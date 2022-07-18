@@ -14,10 +14,10 @@ export const Home = () => (
     </div>
 	</div>
 	{/* body */}
-	<div className="Title">
+	<div className="Title m-3">
 		<h1>Characters</h1>
 	</div>
-    <div className="card-group">
+    <div className="card-group m-3">
       <div className="card">
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
@@ -59,10 +59,11 @@ export const Home = () => (
         </div>
       </div>
     </div>
-	<div className="Title">
+	<Link to="/People" class="btn btn-primary m-4">Go somewhere</Link>
+	<div className="Title m-3">
 		<h1>Planets</h1>
 	</div>
-	<div className="card-group">
+	<div className="card-group m-3">
       <div className="card">
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
@@ -104,10 +105,11 @@ export const Home = () => (
         </div>
       </div>
     </div>
-	<div className="Title">
+	<Link to="/Planets" class="btn btn-primary m-4">Go somewhere</Link>
+	<div className="Title m-3">
 		<h1>Starships</h1>
 	</div>
-	<div className="card-group">
+	<div className="card-group m-3">
       <div className="card">
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
@@ -149,5 +151,6 @@ export const Home = () => (
         </div>
       </div>
     </div>
+	<Link to="/Vehicles" class="btn btn-primary m-4">Go somewhere</Link>
   </>
 );
