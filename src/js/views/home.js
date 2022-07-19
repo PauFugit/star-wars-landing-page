@@ -10,7 +10,7 @@ export const Home = () => (
         <h1 className="display-4">Welcome to my Website</h1>
         <br></br>
         <p>Here is the Starwars Characters, Planets and Starships</p>
-        <Link to="#" className="btn btn-info">May the force be with you</Link>
+          <Link to="#" className="btn btn-info">May the force be with you</Link>
     </div>
 	</div>
 	{/* body */}
