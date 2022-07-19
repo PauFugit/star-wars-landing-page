@@ -37,6 +37,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			getPeople: () => {
+				
 			}
 		}
 	};

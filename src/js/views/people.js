@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const People=() => {
   return (
     <>
-      <div className="title">
+      <div className="title text-danger">
         <h1>People</h1>
       </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -59,7 +59,7 @@ const People=() => {
             </div>
           </div>
         </div>
-      </div>
+      </div><br></br>
       <Link to="/" class="btn btn-primary">Go Home</Link>
     </>
   )
