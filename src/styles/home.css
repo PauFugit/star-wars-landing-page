@@ -1,4 +1,17 @@
 /* ./dist/starwarsWallpaper.jpg */
 body{
-    background-image: url("https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_1280.png");
+    background-size: 100% auto;
+    background-position: center top;
+    opacity: 90%;
+}
+.container-notJumbotron{
+    background-image: url(https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    object-fit: fill;
+    width: 100%;
+    border-radius: 18px;
 }

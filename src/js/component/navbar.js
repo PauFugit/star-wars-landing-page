@@ -32,7 +32,7 @@ export const Navbar = () => {
               Home
             </Link>
             <Link className="nav-link text-info" to="/people">
-              People
+              Characters
             </Link>
             <Link className="nav-link text-info" to="/planets">
               Planets

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<>{/* not jumbrotron */}
-    <div class="container-fluid bg-dark text-light p-5">
-    <div class="container bg-dark p-5">
+    <div class="container-fluid text-light p-5">
+    <div class="container-notJumbotron">
         <h1 class="display-4">Welcome to my Website</h1>
         <br></br>
         <p>Here is the Starwars Characters, Planets and Starships</p>
@@ -14,7 +14,7 @@ export const Home = () => (
     </div>
 	</div>
 	{/* body */}
-	<div className="Title m-3">
+	<div className="title m-3 text-primary">
 		<h1>Characters</h1>
 	</div>
     <div className="card-group m-3">
@@ -60,7 +60,7 @@ export const Home = () => (
       </div>
     </div>
 	<Link to="/People" class="btn btn-primary m-4">Go somewhere</Link>
-	<div className="Title m-3">
+	<div className="Title m-3 text-primary">
 		<h1>Planets</h1>
 	</div>
 	<div className="card-group m-3">
@@ -106,7 +106,7 @@ export const Home = () => (
       </div>
     </div>
 	<Link to="/Planets" class="btn btn-primary m-4">Go somewhere</Link>
-	<div className="Title m-3">
+	<div className="Title m-3 text-primary">
 		<h1>Starships</h1>
 	</div>
 	<div className="card-group m-3">
