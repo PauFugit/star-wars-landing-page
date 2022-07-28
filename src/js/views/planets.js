@@ -60,7 +60,7 @@ export default function planets() {
           </div>
         </div>
       </div><br></br>
-      <Link to="/" class="btn btn-primary">Go Home</Link>
+      <Link to="/" className="btn btn-primary">Go Home</Link>
     </>
   )
 }
