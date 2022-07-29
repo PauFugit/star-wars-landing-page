@@ -36,9 +36,10 @@ const Vehicles = () => {
 
                   </p>
                 </div>
+                <br></br>
                 </div>
               </div>
-              
+      
               </div>
       );
       })
