@@ -44,7 +44,7 @@ const Planets = () => {
         })
       }
       <div className="button">
-        <Link to="/" class="btn btn-dark">Go Home</Link>
+        <Link to="/" className="btn btn-dark">Go Home</Link>
       </div>
 
     </>
