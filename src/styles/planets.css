@@ -1,0 +1,19 @@
+#imgplanets{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#datosplanets{
+    display: right;
+}
+
+#cardplanets{
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+
+}
+#titleplanets{
+    font-size: 60px;
+}

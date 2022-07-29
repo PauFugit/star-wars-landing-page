@@ -1,0 +1,21 @@
+
+#imgvehicles{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#datosvehicles{
+    display: right;
+}
+
+#cardvehicles{
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+
+}
+#titlevehicles{
+    font-size: 60px;
+}
+
