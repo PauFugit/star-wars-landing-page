@@ -32,12 +32,12 @@ export const Home = () => {
       </div>
 
      
-      <div className="row">
+      <div className="row card-group m-3">
         <div className="col-4">
           <div className="card">
             <img className="card-img-top" src="..." alt="Characters" />
 
-            <div className="card-body">
+            <div className="card-body ">
 
               <h4 className="card-title">Characters</h4>
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in
