@@ -44,7 +44,7 @@ export const Home = () => {
                 to additional content. This content is a little bit longer.</p>
               <Link to="/People" className="btn btn-primary m-4">Learn more!</Link>
               <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i class="fa-light fa-stars"></i>
+                <i className="fa-light fa-stars"></i>
                   </button>
             </div>
           </div>
@@ -61,7 +61,7 @@ export const Home = () => {
                 to additional content. This content is a little bit longer.</p>
                 <Link to="/Planets" className="btn btn-primary m-4">Learn more!</Link>
                 <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i class="fa-light fa-stars"></i>
+                <i className="fa-light fa-stars"></i>
                   </button>
             </div>
           </div>
@@ -79,7 +79,7 @@ export const Home = () => {
                 <Link to="/Vehicles" className="btn btn-primary m-4">Learn more!</Link>
                 
                 <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i class="fa-light fa-stars"></i>
+                <i className="fa-light fa-stars"></i>
                   </button>
 
             </div>

@@ -11,11 +11,11 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-dark opacity-75 pt-0 pb-0">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img class="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
+          <img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
         </Link>
 
-        <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="btn-group">
+          <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Favorites
           </button>
           <ul className="dropdown-menu">
