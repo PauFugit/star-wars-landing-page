@@ -4,22 +4,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 			people: null,
 			planets: null,
 			vehicles: null,
-			demo: [
-				
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			favorite: [],
+			demo: null,
 		},
+
+
 		actions: {
-			// Use getActions to call a function within a fuction
+
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},
@@ -44,63 +35,74 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			getPeople: (url) => {
 				fetch(url, {
-				  method: "GET",
-				  headers: {
-					"Content-Type": "application/json",
-				  },
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+					},
 				})
-				  .then((response) => {
-					console.log(response);
-					return response.json();
-				  })
-				  .then((data) => {
-					setStore({people:data});
-			
-				  })
-				  .catch((error) => {
-					console.log(error);
-				  });
-			  },
-			  getPlanets: (url) => {
-				fetch(url, {
-				  method: "GET",
-				  headers: {
-					"Content-Type": "application/json",
-				  },
-				})
-				  .then((response) => {
-					console.log(response);
-					return response.json();
-				  })
-				  .then((data) => {
-					setStore({planets:data});
-			
-				  })
-				  .catch((error) => {
-					console.log(error);
-				  });
-			  },
-			  getVehicles: (url) => {
-				fetch(url, {
-				  method: "GET",
-				  headers: {
-					"Content-Type": "application/json",
-				  },
-				})
-				  .then((response) => {
-					console.log(response);
-					return response.json();
-				  })
-				  .then((data) => {
-					setStore({vehicles:data});
-			
-				  })
-				  .catch((error) => {
-					console.log(error);
-				  });
-			  },
-		}
-	};
-};
+					.then((response) => {
+						console.log(response);
+						return response.json();
+					})
+					.then((data) => {
+						setStore({ people: data });
 
-export default getState;
+					})
+					.catch((error) => {
+						console.log(error);
+					});
+			},
+			getPlanets: (url) => {
+				fetch(url, {
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+					},
+				})
+					.then((response) => {
+						console.log(response);
+						return response.json();
+					})
+					.then((data) => {
+						setStore({ planets: data });
+
+					})
+					.catch((error) => {
+						console.log(error);
+					});
+			},
+			getVehicles: (url) => {
+				fetch(url, {
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+					},
+				})
+					.then((response) => {
+						console.log(response);
+						return response.json();
+					})
+					.then((data) => {
+						setStore({ vehicles: data });
+
+					})
+					.catch((error) => {
+						console.log(error);
+					});
+			},
+
+			insertFavorite: (insertF) => {
+				const store = getStore()
+				setStore({favorite: store.favorite.concat({name:insertF})})
+			},
+
+			deleteFavorite: (deleteF) => {
+				const store=getStore()
+				setStore ({favorite: store.favorite.filter(favorite=>favorite.name!==deleteF)})
+			}
+
+		}
+	}
+}
+
+export default getState

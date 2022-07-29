@@ -1,0 +1,19 @@
+#imgpeople{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#datos{
+    display: right;
+}
+
+#cardpeople{
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+
+}
+#titlepeople{
+    font-size: 60px;
+}

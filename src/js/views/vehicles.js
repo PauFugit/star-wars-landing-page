@@ -1,66 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { Context } from '../store/appContext';
+import { useContext } from 'react';
+import imgvehicles from '../../img/imgvehicles.jpg'
+import "../../styles/vehicles.css"
 
-export default function Vehicles() {
+const Vehicles = () => {
+  const { store, actions } = useContext(Context);
+  const testVehicles = () => {
+    console.log(store.favorite)
+  }
+
+
   return (
     <>
-      <div className="title text-danger">
-        <h1>Vehicles</h1>
-      </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div><br></br>
-      <Link to="/" class="btn btn-primary">Go Home</Link>
-    </>
-  )
-}
+      <div className="text-center text-white" id="titlevehicles">Vehicles</div>
+
+      {
+        !!store.vehicles && store.vehicles.results.map((elem, index) => {
+
+          return (
+            <div className="row justify-content-center">
+              <img className="card-img-top" src={imgvehicles} id="imgvehicles" alt="imgvehicles" />
+              <div className="col-4">
+                <div className="card" key={index} id="cardvehicles">
+
+                <div className="card-body">
+                  <p className="card-text">
+                    <li>Name: {elem.name}</li>
+                    <li>Model:{elem.model}</li>
+                    <li>Length: {elem.length}</li>
+                    <li>Manufacturer: {elem.manufacturer}</li>
+                    <li>Cost in credits: {elem.cost_in_credits}</li>
+                    <li>Vehicle Class: {elem.vehicle_class}</li>
+
+                  </p>
+                </div>
+                </div>
+              </div>
+              
+              </div>
+      );
+      })
+      }
+
+              
+            </>
+          )
+        }
+
+export default Vehicles;
+
+
