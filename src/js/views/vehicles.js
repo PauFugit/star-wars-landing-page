@@ -33,6 +33,14 @@ const Vehicles = () => {
                     <li>Manufacturer: {elem.manufacturer}</li>
                     <li>Cost in credits: {elem.cost_in_credits}</li>
                     <li>Vehicle Class: {elem.vehicle_class}</li>
+                    <button
+                        className="button ms-5"
+                        onClick={() => {
+                          actions.insertFavorite(elem.name);
+                        }}
+                      >
+                        <i className="fa fa-star"></i>
+                      </button>
 
                   </p>
                 </div>

@@ -34,6 +34,14 @@ const Planets = () => {
                       <li>Orbital period: {elem.orbital_period}</li>
                       <li>Diameter: {elem.diameter}</li>
                       <li>Climate: {elem.climate}</li>
+                      <button
+                        className="button ms-5"
+                        onClick={() => {
+                          actions.insertFavorite(elem.name);
+                        }}
+                      >
+                        <i className="fa fa-star"></i>
+                      </button>
 
                     </p>
                   </div>
