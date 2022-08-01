@@ -43,8 +43,8 @@ export const Home = () => {
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in
                 to additional content. This content is a little bit longer.</p>
               <Link to="/People" className="btn btn-primary m-4">Learn more!</Link>
-              <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i className="fa-light fa-stars"></i>
+              <button className="button ms-5" onClick={() => { actions.insertFavorite(elem.name) }}>
+                <i className="fa fa-star"></i>
                   </button>
             </div>
           </div>
@@ -60,8 +60,8 @@ export const Home = () => {
               <p className="card-text">This is a wider card with supporting text below as a natural lead-in
                 to additional content. This content is a little bit longer.</p>
                 <Link to="/Planets" className="btn btn-primary m-4">Learn more!</Link>
-                <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i className="fa-light fa-stars"></i>
+                <button className="button ms-5" onClick={() => { actions.insertFavorite(elem.name) }}>
+                <i className="fa fa-star"></i>
                   </button>
             </div>
           </div>
@@ -78,8 +78,8 @@ export const Home = () => {
                 to additional content. This content is a little bit longer.</p>
                 <Link to="/Vehicles" className="btn btn-primary m-4">Learn more!</Link>
                 
-                <button className="button" onClick={() => { actions.insertFavorite(elem.name) }}>
-                <i className="fa-light fa-stars"></i>
+                <button className="button ms-5" onClick={() => { actions.insertFavorite(elem.name) }}>
+                <i className="fa fa-star"></i>
                   </button>
 
             </div>

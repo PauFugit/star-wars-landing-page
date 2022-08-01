@@ -44,6 +44,9 @@ const Vehicles = () => {
       );
       })
       }
+       <div className="button">
+        <Link to="/" className="btn btn-dark">Go Home</Link>
+      </div>
 
               
             </>

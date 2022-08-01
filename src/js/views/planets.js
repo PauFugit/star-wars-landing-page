@@ -34,8 +34,10 @@ const Planets = () => {
                       <li>Orbital period: {elem.orbital_period}</li>
                       <li>Diameter: {elem.diameter}</li>
                       <li>Climate: {elem.climate}</li>
+
                     </p>
                   </div>
+                  <br></br>
                 </div>
               </div>
 
