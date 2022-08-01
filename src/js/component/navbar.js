@@ -38,7 +38,7 @@ export const Navbar = () => {
 			<Navbar className="justify-content-between p-0">
 				<Navbar.Brand>
 					<Link to="/">
-						<img src={starsWarsLogo} width="100" height="100" className="d-inline-block align-top" />
+						<img src="https://img.icons8.com/color/344/star-wars.png" width="100" height="100" className="d-inline-block align-top" />
 					</Link>
 				</Navbar.Brand>
 				<Favorites />
