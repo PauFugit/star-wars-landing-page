@@ -2,7 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import { EmojiNeutral } from "react-bootstrap-icons";
+import Favorites from "./favorites";
+
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
@@ -30,3 +31,18 @@ export const Navbar = () => {
   );
 };
 
+
+
+/* export const Navbar = () => {
+	return (
+			<Navbar className="justify-content-between p-0">
+				<Navbar.Brand>
+					<Link to="/">
+						<img src={starsWarsLogo} width="100" height="100" className="d-inline-block align-top" />
+					</Link>
+				</Navbar.Brand>
+				<Favorites />
+			</Navbar>
+	);
+};
+ */
