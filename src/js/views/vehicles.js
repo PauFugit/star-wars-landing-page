@@ -17,13 +17,13 @@ const Vehicles = () => {
       <div className="text-center text-white" id="titlevehicles">Vehicles</div>
 
       {
-        !!store.vehicles && store.vehicles.results.map((elem, index) => {
+        !!store.vehicles && store.vehicles.results.map((elem, indexVehicles) => {
 
           return (
-            <div className="row justify-content-center">
+            <div className="row justify-content-center"  key={indexVehicles}>
               <img className="card-img-top" src={imgvehicles} id="imgvehicles" alt="imgvehicles" />
               <div className="col-4">
-                <div className="card" key={index} id="cardvehicles">
+                <div className="card" id="cardvehicles">
 
                 <div className="card-body">
                   <p className="card-text">

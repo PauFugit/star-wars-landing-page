@@ -17,14 +17,14 @@ const Planets = () => {
     <>
       <div className="text-center text-white" id="titleplanets">Planets</div>
       {
-        !!store.planets && store.planets.results.map((elem, index) => {
+        !!store.planets && store.planets.results.map((elem, indexPlanets) => {
 
           return (
-            <div className="row justify-content-center">
+            <div className="row justify-content-center" key={indexPlanets}>
               <img className="card-img-top" src={imgplanets} alt="imgplanets" id="imgplanets" />
 
               <div className="col-4">
-                <div className="card" key={index} id="cardplanets">
+                <div className="card" id="cardplanets">
 
                   <div className="card-body">
                     <p className="card-text">

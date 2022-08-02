@@ -17,9 +17,9 @@ const People = () => {
       </div>
 
       {!!store.people &&
-        store.people.results.map((elem, index) => {
+        store.people.results.map((elem, indexPeople) => {
           return (
-            <div className="row justify-content-center">
+            <div className="row justify-content-center" key={indexPeople}>
               <img
                 className="card-img-top"
                 src={imgpeople}
@@ -27,7 +27,7 @@ const People = () => {
                 alt="imgpeople"
               />
               <div className="col-4">
-                <div className="card" key={index} id="cardcharacters">
+                <div className="card" id="cardcharacters">
                   <div className="card-body">
                     <p className="card-text">
                       <li>Name: {elem.name}</li>
