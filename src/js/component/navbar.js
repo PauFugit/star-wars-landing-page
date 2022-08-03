@@ -2,7 +2,6 @@ import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import Favorites from "./favorites";
 
 
 export const Navbar = () => {
@@ -15,7 +14,34 @@ export const Navbar = () => {
           <img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
         </Link>
 
-        <div className="btn-group">
+        <li className="nav-item dropdown">
+						<a
+							className="nav-link dropdown-toggle text-light"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							<span>Favorites   </span>
+							<i className="fa fa-star"></i>
+						</a>
+						<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+						>
+
+							{
+								!!store.favorite &&
+								store.favorite.map((elem, index) => {
+									return (
+										<li key={index}>{elem.name}<i className="fas fa-trash-alt" onClick={() =>{actions.deleteFavorite(elem.name)}}></i></li>
+									)
+								}
+								)
+							}
+						</ul>
+					</li>
+
+        {/* <div className="btn-group">
           <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Favorites
           </button>
@@ -24,7 +50,7 @@ export const Navbar = () => {
           </ul>
 
 
-        </div>
+        </div> */}
         </div>
 
     </nav>
