@@ -15,13 +15,18 @@ const Planets = () => {
   return (
 
     <>
-      <div className="text-center text-white" id="titleplanets">Planets</div>
+      <div className="container-fluid text-light p-5">
+        <div className="container-notJumbotron" id="jumbotronPlanets">
+          <h1 className="display-4">Planets</h1>
+          <br></br>
+                   
+        </div>
+      </div>
       {
         !!store.planets && store.planets.results.map((elem, indexPlanets) => {
 
           return (
             <div className="row justify-content-center" key={indexPlanets}>
-              <img className="card-img-top" src={imgplanets} alt="imgplanets" id="imgplanets" />
 
               <div className="col-4">
                 <div className="card" id="cardplanets">
@@ -54,9 +59,13 @@ const Planets = () => {
         })
       }
       <div className="button">
-        <Link to="/" className="btn btn-dark">Go Home</Link>
+        <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
+          Go Home
+        </Link>
+        
       </div>
-
+      <br></br>
+      <br></br>
     </>
   )
 }

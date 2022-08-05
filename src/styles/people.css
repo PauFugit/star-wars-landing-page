@@ -9,11 +9,29 @@
 }
 
 #cardpeople{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     margin-top: 30px;
 
 }
 #titlepeople{
     font-size: 60px;
+}
+
+#buttonHome{
+    float:inline-end;
+    width: 300px;
+    height: 50px;
+    
+}
+
+#jumbotronP{
+    background-image: url(https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    object-fit: fill;
+    width: 100%;
+    border-radius: 18px;
 }
