@@ -5,16 +5,38 @@ import { Context } from "../store/appContext";
 
 
 export const Navbar = () => {
-  const { store, actions } = useContext(Context);
+	const { store, actions } = useContext(Context);
 
-  return (
-    <nav className="navbar navbar-expand-lg bg-dark opacity-75 pt-0 pb-0">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
-        </Link>
 
-        <li className="nav-item dropdown">
+	return (
+		<nav className="navbar navbar-expand-lg bg-dark opacity-75 pt-0 pb-0">
+			<div className="container-fluid">
+				<Link className="navbar-brand" to="/">
+					<img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
+				</Link>
+
+
+				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<ul className="navbar-nav position-absolute end-0 mx-3">
+						<li className="nav-item">
+							<Link className="nav-link text-light" to="/people">
+								Characters
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link text-light" to="/planets">
+								Planets
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link className="nav-link text-light" to="/vehicles">
+								Vehicles
+							</Link>
+						</li>
+
+					
+
+					<li className="nav-item dropdown">
 						<a
 							className="nav-link dropdown-toggle text-light"
 							href="#"
@@ -33,42 +55,20 @@ export const Navbar = () => {
 								!!store.favorite &&
 								store.favorite.map((elem, index) => {
 									return (
-										<li key={index}>{elem.name}<i className="fas fa-trash-alt" onClick={() =>{actions.deleteFavorite(elem.name)}}></i></li>
+										<li key={index}>{elem.name}<i className="fas fa-trash-alt" onClick={() => { actions.deleteFavorite(elem.name) }}></i></li>
 									)
 								}
 								)
 							}
 						</ul>
 					</li>
-
-        {/* <div className="btn-group">
-          <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Favorites
-          </button>
-          <ul className="dropdown-menu">
-            
-          </ul>
+					</ul>
 
 
-        </div> */}
-        </div>
+				</div>
+			</div>
+		</nav>
 
-    </nav>
-  );
-};
-
-
-
-/* export const Navbar = () => {
-	return (
-			<Navbar className="justify-content-between p-0">
-				<Navbar.Brand>
-					<Link to="/">
-						<img src="https://img.icons8.com/color/344/star-wars.png" width="100" height="100" className="d-inline-block align-top" />
-					</Link>
-				</Navbar.Brand>
-				<Favorites />
-			</Navbar>
 	);
 };
- */
+

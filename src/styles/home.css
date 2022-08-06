@@ -1,16 +1,48 @@
 body{
-    background-image: url("https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_1280.png");
+    background-image: url("https://www.xtrafondos.com/wallpapers/estrellas-de-la-via-lactea-4047.jpg");
     background-size: 100% auto;
     background-position: center top;
     opacity: 90%;
 }
-.container-notJumbotron{
-    background-image: url(https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 80%;
-    object-fit: fill;
-    width: 100%;
-    border-radius: 18px;
+
+
+#img1{
+    height: 500px;
+}
+#img2{
+    height: 500px;
+}
+#img3{
+    height: 500px;
+}
+
+#imgHomePeople{
+    width: 250px;
+    height: 250px;
+
+}
+
+#imgHomePlanets{
+    width: 250px;
+    height: 250px;
+
+}
+
+#card1{
+    width: 900;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#card2{
+    width: 900;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
+#card3{
+    width: 900;
+    margin-left: 200px;
+    margin-right: 200px;
 }

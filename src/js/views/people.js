@@ -12,24 +12,24 @@ const People = () => {
 
   return (
     <>
-      <div className="text-center text-white" id="titlepeople">
-        Characters
+      <div className="container-fluid text-light p-5">
+        <div className="container-notJumbotron" id="jumbotronP">
+          <h1 className="display-4">Characters</h1>
+          <br></br>
+                   
+        </div>
       </div>
 
       {!!store.people &&
         store.people.results.map((elem, indexPeople) => {
           return (
+
             <div className="row justify-content-center" key={indexPeople}>
-              <img
-                className="card-img-top"
-                src={imgpeople}
-                id="imgpeople"
-                alt="imgpeople"
-              />
               <div className="col-4">
-                <div className="card" id="cardcharacters">
+                <div className="card" id="cardpeople">
                   <div className="card-body">
                     <p className="card-text">
+                      <ul>
                       <li>Name: {elem.name}</li>
                       <li>Birth year:{elem.birth_year}</li>
                       <li>Height: {elem.height}</li>
@@ -37,8 +37,9 @@ const People = () => {
                       <li>Hair color: {elem.hair_color}</li>
                       <li>Eye color: {elem.eye_color}</li>
                       <li>Skin color: {elem.skin_color}</li>
+                      </ul>
                       <button
-                        className="button ms-5"
+                        className="button ms-5" id="buttonFav"
                         onClick={() => {
                           actions.insertFavorite(elem.name);
                         }}
@@ -50,15 +51,26 @@ const People = () => {
                 </div>
                 <br></br>
               </div>
+
             </div>
+
           );
+
         })}
+                  
+
       <div className="button">
-        <Link to="/" className="btn btn-dark">
+        <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
           Go Home
         </Link>
+        
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+
     </>
+    
   );
 };
 export default People;

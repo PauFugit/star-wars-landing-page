@@ -19,3 +19,13 @@
     font-size: 60px;
 }
 
+#jumbotronV{
+    background-image: url(https://as01.epimg.net/meristation/imagenes/2020/12/15/noticias/1608024138_504427_1608024822_noticia_normal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    object-fit: fill;
+    width: 100%;
+    border-radius: 18px;
+}
