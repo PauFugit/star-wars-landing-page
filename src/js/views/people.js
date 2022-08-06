@@ -15,62 +15,59 @@ const People = () => {
       <div className="container-fluid text-light p-5">
         <div className="container-notJumbotron" id="jumbotronP">
           <h1 className="display-4">Characters</h1>
-          <br></br>
-                   
+          <br />
         </div>
       </div>
-
-      {!!store.people &&
-        store.people.results.map((elem, indexPeople) => {
-          return (
-
-            <div className="row justify-content-center" key={indexPeople}>
-              <div className="col-4">
-                <div className="card" id="cardpeople">
-                  <div className="card-body">
-                    <p className="card-text">
-                      <ul>
-                      <li>Name: {elem.name}</li>
-                      <li>Birth year:{elem.birth_year}</li>
-                      <li>Height: {elem.height}</li>
-                      <li>Mass: {elem.mass}</li>
-                      <li>Hair color: {elem.hair_color}</li>
-                      <li>Eye color: {elem.eye_color}</li>
-                      <li>Skin color: {elem.skin_color}</li>
-                      </ul>
-                      <button
-                        className="button ms-5" id="buttonFav"
-                        onClick={() => {
-                          actions.insertFavorite(elem.name);
-                        }}
-                      >
-                        <i className="fa fa-star"></i>
-                      </button>
-                    </p>
+      <div  style={{ overflow: "scroll",
+          width: "1270px",
+          height: "500px",}}>
+            <div className="row row-cols-8 mt-2 p-5" style={{width:"100%"}}>
+          {!!store.people &&
+            store.people.results.map((elem, indexPeople) => {
+              return (
+                <div className="" key={indexPeople}>
+                  <div className="col-4">
+                    <div className="card" id="cardpeople">
+                      <div className="card-body">
+                        <div className="card-text">
+                          <ul>
+                            <li>Name: {elem.name}</li>
+                            <li>Birth year:{elem.birth_year}</li>
+                            <li>Height: {elem.height}</li>
+                            <li>Mass: {elem.mass}</li>
+                            <li>Hair color: {elem.hair_color}</li>
+                            <li>Eye color: {elem.eye_color}</li>
+                            <li>Skin color: {elem.skin_color}</li>
+                          </ul>
+                          <button
+                            className="button float-end"
+                            id="buttonFav"
+                            onClick={() => {
+                              actions.insertFavorite(elem.name);
+                            }}
+                          >
+                            <i className="fa fa-star"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <br></br>
                   </div>
                 </div>
-                <br></br>
-              </div>
-
-            </div>
-
-          );
-
-        })}
-                  
+              );
+            })}
+        </div>
+      </div>
 
       <div className="button">
         <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
           Go Home
         </Link>
-        
       </div>
       <br></br>
       <br></br>
       <br></br>
-
     </>
-    
   );
 };
 export default People;

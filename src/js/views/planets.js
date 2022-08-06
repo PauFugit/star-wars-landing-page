@@ -32,7 +32,7 @@ const Planets = () => {
                 <div className="card" id="cardplanets">
 
                   <div className="card-body">
-                    <p className="card-text">
+                    <div className="card-text">
                       <li>Name: {elem.name}</li>
                       <li>Population: {elem.population}</li>
                       <li>Rotation period: {elem.rotation_period}</li>
@@ -40,7 +40,7 @@ const Planets = () => {
                       <li>Diameter: {elem.diameter}</li>
                       <li>Climate: {elem.climate}</li>
                       <button
-                        className="button ms-5"
+                        className="button float-end"
                         onClick={() => {
                           actions.insertFavorite(elem.name);
                         }}
@@ -48,7 +48,7 @@ const Planets = () => {
                         <i className="fa fa-star"></i>
                       </button>
 
-                    </p>
+                    </div>
                   </div>
                   <br></br>
                 </div>
@@ -64,8 +64,8 @@ const Planets = () => {
         </Link>
         
       </div>
-      <br></br>
-      <br></br>
+      <br/>
+      <br/>
     </>
   )
 }

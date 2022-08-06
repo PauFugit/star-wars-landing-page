@@ -31,7 +31,7 @@ const Vehicles = () => {
                 <div className="card" id="cardvehicles">
 
                   <div className="card-body">
-                    <p className="card-text">
+                    <div className="card-text">
                       <li>Name: {elem.name}</li>
                       <li>Model:{elem.model}</li>
                       <li>Length: {elem.length}</li>
@@ -39,7 +39,7 @@ const Vehicles = () => {
                       <li>Cost in credits: {elem.cost_in_credits}</li>
                       <li>Vehicle Class: {elem.vehicle_class}</li>
                       <button
-                        className="button ms-5"
+                        className="button float-end"
                         onClick={() => {
                           actions.insertFavorite(elem.name);
                         }}
@@ -47,7 +47,7 @@ const Vehicles = () => {
                         <i className="fa fa-star"></i>
                       </button>
 
-                    </p>
+                    </div>
                   </div>
                   <br></br>
                 </div>
