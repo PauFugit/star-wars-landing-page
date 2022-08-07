@@ -19,17 +19,17 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<ul className="navbar-nav position-absolute end-0 mx-3">
 						<li className="nav-item">
-							<Link className="nav-link text-light" to="/people">
+							<Link className="nav-link text-white" to="/people">
 								Characters
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link text-light" to="/planets">
+							<Link className="nav-link text-white" to="/planets">
 								Planets
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link text-light" to="/vehicles">
+							<Link className="nav-link text-white" to="/vehicles">
 								Vehicles
 							</Link>
 						</li>

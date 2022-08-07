@@ -1,8 +1,10 @@
 body{
     background-image: url("https://www.xtrafondos.com/wallpapers/estrellas-de-la-via-lactea-4047.jpg");
-    background-size: 100% auto;
-    background-position: center top;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     opacity: 90%;
+    background-attachment: fixed;
 }
 
 
@@ -32,6 +34,9 @@ body{
     width: 900;
     margin-left: 200px;
     margin-right: 200px;
+    opacity: 50%;
+    text-decoration: black;
+    
 }
 
 #card2{

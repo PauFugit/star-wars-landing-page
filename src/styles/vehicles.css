@@ -10,13 +10,19 @@
 }
 
 #cardvehicles{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     margin-top: 30px;
 
 }
 #titlevehicles{
     font-size: 60px;
+}
+
+#buttonHome{
+    float:inline-end;
+    width: 300px;
+    height: 50px;
 }
 
 #jumbotronV{

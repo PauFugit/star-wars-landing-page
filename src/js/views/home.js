@@ -95,7 +95,7 @@ export const Home = () => {
 
       
 
-      <div className="row g-0 d-flex justify-content-center border-top opacity-75" id="card2">
+      <div className="row g-0 d-flex justify-content-center border-top opacity-75 text-dark" id="card2">
         <div className="card border-0">
           <div className="row g-0 d-flex justify-content-center ">
             
@@ -113,7 +113,7 @@ export const Home = () => {
                 </p>
               </div>
             <div className="container-fluid pt-5 pb-4">
-              <Link to="/People" className="btn btn-secondary" id="buttonPeople">Learn more!</Link>
+              <Link to="/Planets" className="btn btn-secondary" id="buttonPeople">Learn more!</Link>
             </div>
 
             </div>
@@ -133,7 +133,7 @@ export const Home = () => {
       <br></br>
       <br></br>
 
-      <div className="row g-0 d-flex justify-content-center border-top opacity-75" id="card3">
+      <div className="row g-0 d-flex justify-content-center border-top bg-body text-dark opacity-75" id="card3">
         <div className="card border-0">
           <div className="row g-0 d-flex justify-content-center ">
             <div className="col-md-3">

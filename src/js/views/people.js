@@ -21,7 +21,7 @@ const People = () => {
       <div  style={{ overflow: "scroll",
           width: "1270px",
           height: "500px",}}>
-            <div className="row row-cols-8 mt-2 p-5" style={{width:"100%"}}>
+            <div className="row row-cols-4 mt-2 p-5 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
           {!!store.people &&
             store.people.results.map((elem, indexPeople) => {
               return (
