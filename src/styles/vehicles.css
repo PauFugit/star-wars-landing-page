@@ -1,29 +1,11 @@
-
-#imgvehicles{
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-
-#datosvehicles{
-    display: right;
-}
-
 #cardvehicles{
     width: 300px;
     height: 250px;
     margin-top: 30px;
 
 }
-#titlevehicles{
-    font-size: 60px;
-}
 
-#buttonHome{
-    float:inline-end;
-    width: 300px;
-    height: 50px;
-}
+
 
 #jumbotronV{
     background-image: url(https://as01.epimg.net/meristation/imagenes/2020/12/15/noticias/1608024138_504427_1608024822_noticia_normal.jpg);
@@ -34,4 +16,12 @@
     object-fit: fill;
     width: 100%;
     border-radius: 18px;
+}
+
+#overflowid3{
+    overflow: "scroll";
+    width: "1270px";
+    height: "300px";
+    overflow-x:scroll;
+    overflow-y:hidden;
 }

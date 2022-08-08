@@ -9,7 +9,7 @@ export const Navbar = () => {
 
 
 	return (
-		<nav className="navbar navbar-expand-lg bg-dark opacity-75 pt-0 pb-0">
+		<nav className="navbar navbar-expand-lg bg-dark opacity-80 pt-0 pb-0">
 			<div className="container-fluid">
 				<Link className="navbar-brand" to="/">
 					<img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />

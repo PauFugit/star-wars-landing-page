@@ -19,11 +19,9 @@ const Planets = () => {
           <br />
         </div>
       </div>
-      <div style={{ overflow: "scroll", 
-        width: "1270px", 
-        height: "500px", }}>
+      <div id="overflowid2">
           <div
-            className="row row-cols-4 mt-2 p-5 scrolling-wrapper row flex-row flex-nowrap"
+            className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap"
             style={{ width: "100%" }}>
           {!!store.planets &&
             store.planets.results.map((elem, indexPlanets) => {
@@ -33,12 +31,14 @@ const Planets = () => {
                     <div className="card" id="cardplanets">
                       <div className="card-body">
                         <div className="card-text">
+                          <ul>
                           <li>Name: {elem.name}</li>
                           <li>Population: {elem.population}</li>
                           <li>Rotation period: {elem.rotation_period}</li>
                           <li>Orbital period: {elem.orbital_period}</li>
                           <li>Diameter: {elem.diameter}</li>
                           <li>Climate: {elem.climate}</li>
+                          </ul>
                           <button
                             className="button float-end"
                             onClick={() => {
@@ -49,15 +49,16 @@ const Planets = () => {
                           </button>
                         </div>
                       </div>
+                      </div>
                       <br></br>
-                    </div>
+                    
                   </div>
                 </div>
               );
             })}{" "}
         </div>
       </div>
-      <div className="button">
+      <div className="button pt-5">
         <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
           Go Home
         </Link>

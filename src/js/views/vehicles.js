@@ -21,10 +21,8 @@ const Vehicles = () => {
           <br />
         </div>
       </div>
-      <div  style={{ overflow: "scroll",
-        width: "1270px",
-        height: "500px",}}>
-        <div className="row row-cols-4 mt-2 py-5 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
+      <div  id="overflowid3">
+        <div className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
       
       {!!store.vehicles && store.vehicles.results.map((elem, indexVehicles) => {
 
@@ -35,14 +33,16 @@ const Vehicles = () => {
 
                   <div className="card-body">
                     <div className="card-text">
+                      <ul>
                       <li>Name: {elem.name}</li>
                       <li>Model:{elem.model}</li>
                       <li>Length: {elem.length}</li>
                       <li>Manufacturer: {elem.manufacturer}</li>
                       <li>Cost in credits: {elem.cost_in_credits}</li>
                       <li>Vehicle Class: {elem.vehicle_class}</li>
+                      </ul>
                       <button
-                        className="button float-end"
+                        className="button float-end" 
                         onClick={() => {
                           actions.insertFavorite(elem.name);
                         }}
@@ -52,15 +52,15 @@ const Vehicles = () => {
 
                     </div>
                   </div>
+                  </div>
                   <br></br>
-                </div>
               </div>
-
             </div>
           );
         })}
       </div>
-      <div className="button">
+      </div>
+      <div className="button pt-5">
         <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
           Go Home
         </Link>
@@ -69,7 +69,6 @@ const Vehicles = () => {
       <br></br>
       <br></br>
       <br></br>
-      </div>
     </>
   );
 };

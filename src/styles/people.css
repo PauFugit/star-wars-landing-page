@@ -1,29 +1,10 @@
-#imgpeople{
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-
-#datos{
-    display: right;
-}
 
 #cardpeople{
     width: 300px;
     height: 250px;
     margin-top: 30px;
-
-}
-#titlepeople{
-    font-size: 60px;
 }
 
-#buttonHome{
-    float:inline-end;
-    width: 300px;
-    height: 50px;
-    
-}
 
 #jumbotronP{
     background-image: url(https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg);
@@ -35,3 +16,12 @@
     width: 100%;
     border-radius: 18px;
 }
+
+#overflowid{
+    overflow: "scroll";
+    width: "1270px";
+    height: "300px";
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+

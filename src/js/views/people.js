@@ -10,6 +10,7 @@ const People = () => {
     console.log(store.favorite);
   };
 
+  
   return (
     <>
       <div className="container-fluid text-light p-5">
@@ -18,10 +19,8 @@ const People = () => {
           <br />
         </div>
       </div>
-      <div  style={{ overflow: "scroll",
-          width: "1270px",
-          height: "500px",}}>
-            <div className="row row-cols-4 mt-2 p-5 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
+      <div id="overflowid">
+            <div className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
           {!!store.people &&
             store.people.results.map((elem, indexPeople) => {
               return (
@@ -59,7 +58,7 @@ const People = () => {
         </div>
       </div>
 
-      <div className="button">
+      <div className="button pt-5" >
         <Link to="/" className="btn btn-dark pb-6" id="buttonHome">
           Go Home
         </Link>
