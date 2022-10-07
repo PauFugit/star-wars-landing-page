@@ -20,16 +20,15 @@ const People = () => {
         </div>
       </div>
       <div id="overflowid">
-            <div className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap" style={{width:"100%"}}>
+            <div className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap" >
           {!!store.people &&
             store.people.results.map((elem, indexPeople) => {
               return (
                 <div className="" key={indexPeople}>
-                  <div className="col-4">
                     <div className="card" id="cardpeople">
                       <div className="card-body">
                         <div className="card-text">
-                          <ul>
+                          <ul clasName="list">
                             <li>Name: {elem.name}</li>
                             <li>Birth year:{elem.birth_year}</li>
                             <li>Height: {elem.height}</li>
@@ -52,7 +51,7 @@ const People = () => {
                     </div>
                     <br></br>
                   </div>
-                </div>
+               
               );
             })}
         </div>

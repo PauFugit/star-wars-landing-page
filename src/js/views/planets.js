@@ -22,12 +22,12 @@ const Planets = () => {
       <div id="overflowid2">
           <div
             className="row row-cols-4 scrolling-wrapper row flex-row flex-nowrap"
-            style={{ width: "100%" }}>
+            >
           {!!store.planets &&
             store.planets.results.map((elem, indexPlanets) => {
               return (
                 <div className="" key={indexPlanets}>
-                  <div className="col-4">
+                  
                     <div className="card" id="cardplanets">
                       <div className="card-body">
                         <div className="card-text">
@@ -53,7 +53,7 @@ const Planets = () => {
                       <br></br>
                     
                   </div>
-                </div>
+               
               );
             })}{" "}
         </div>

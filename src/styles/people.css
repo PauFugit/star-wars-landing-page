@@ -1,9 +1,8 @@
-
-#cardpeople{
-    width: 300px;
-    height: 250px;
-    margin-top: 30px;
+li{
+    list-style:georgian;
+    padding: 0.2rem;
 }
+
 
 
 #jumbotronP{
@@ -23,5 +22,9 @@
     height: "300px";
     overflow-x:scroll;
     overflow-y:hidden;
+}
+
+.button{
+    color:rgb(155, 76, 189);
 }
 

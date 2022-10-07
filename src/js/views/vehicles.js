@@ -28,7 +28,7 @@ const Vehicles = () => {
 
           return (
             <div className="" key={indexVehicles}>
-              <div className="col-4">
+              
                 <div className="card" id="cardvehicles">
 
                   <div className="card-body">
@@ -56,7 +56,7 @@ const Vehicles = () => {
                   </div>
                   <br></br>
               </div>
-            </div>
+           
           );
         })}
       </div>

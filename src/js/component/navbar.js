@@ -9,10 +9,10 @@ export const Navbar = () => {
 
 
 	return (
-		<nav className="navbar navbar-expand-lg bg-dark opacity-80 pt-0 pb-0">
+		<nav className="navbar navbar-expand-lg bg-dark opacity-80 p2">
 			<div className="container-fluid">
 				<Link className="navbar-brand" to="/">
-					<img className="logo" width="60px" src="https://img.icons8.com/color/344/star-wars.png" />
+					<img className="logo" style={{paddingLeft:"1rem", width:"6rem"}}src="https://cdn.worldvectorlogo.com/logos/star-wars-4.svg" />
 				</Link>
 
 
@@ -46,11 +46,12 @@ export const Navbar = () => {
 							aria-expanded="false"
 						>
 							<span>Favorites   </span>
-							<i className="fa fa-star"></i>
+							<i className="fa fa-star p-2" 
+							style={{color:"yellow"}}></i>
 						</a>
-						<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+						<ul className="dropdown-menu dropdown-menu-end" 
+						aria-labelledby="navbarDropdown"
 						>
-
 							{
 								!!store.favorite &&
 								store.favorite.map((elem, index) => {

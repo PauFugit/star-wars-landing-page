@@ -22,7 +22,7 @@ export const Home = () => {
   return (
     <>
 
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" className="carousel slide pt-0" data-bs-ride="carousel">
         <div className="carousel-inner" id="carrousel">
           <div className="carousel-item active">
             <img id="img1" src="https://cdn.shopify.com/s/files/1/1057/4964/t/24/assets/star-wars-banner.jpeg?v=80624120874934922901628787750" className="d-block w-100" alt="..." />

@@ -9,13 +9,13 @@ body{
 
 
 #img1{
-    height: 500px;
+    height: 380px;
 }
 #img2{
-    height: 500px;
+    height: 380px;
 }
 #img3{
-    height: 500px;
+    height: 380px;
 }
 
 #imgHomePeople{
@@ -27,27 +27,22 @@ body{
 #imgHomePlanets{
     width: 250px;
     height: 250px;
-
 }
 
 #card1{
-    width: 900;
+   
     margin-left: 200px;
     margin-right: 200px;
     opacity: 50%;
-    text-decoration: black;
-    
+    text-decoration: black;  
 }
 
 #card2{
-    width: 900;
     margin-left: 200px;
-    margin-right: 200px;
-    
+    margin-right: 200px; 
 }
 
 #card3{
-    width: 900;
     margin-left: 200px;
     margin-right: 200px;
 }
